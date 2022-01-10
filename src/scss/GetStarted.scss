@@ -1,0 +1,40 @@
+.get-started{
+    background-color: #f4f5f8;
+    padding: 40px 0;
+    .blue-text{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 40px;
+        color: #333333;
+    }
+    .div-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-see-more{
+        color: white;
+        background-color: #157eff;
+        border: none;
+        padding: 5px 20px;
+        border-radius: 50px;
+        min-width: 150px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        div{
+            margin-right: auto;
+            font-size: 16px;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .get-started{
+        h4{
+            font-size: 20px;
+        }
+    }
+}
