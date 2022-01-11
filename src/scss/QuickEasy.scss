@@ -1,11 +1,54 @@
 .easy-quick{
     background-color: #157eff;
     color: white;
-    padding: 40px 0;
+    padding: 70px 0;
     .easy-quick-content{
         display: flex;
         .easy-quick-left{
-            width: 300px;
+            width: 400px;
+            font-size: 48px;
+            font-family: Montserrat-Bold;
+        }
+        .easy-quick-right{
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.7;
         }
     }
+}
+@media screen and (max-width: 1025px) and (min-width: 640px) {
+    .easy-quick{
+        padding: 60px 0;
+        .easy-quick-content{
+            .easy-quick-left{
+                font-size: 38px;
+                font-family: Montserrat-Bold;
+            }
+            .easy-quick-right{
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 639px) {
+    .easy-quick{
+        padding: 60px 0;
+        .easy-quick-content{
+            display: block !important;
+            .easy-quick-left{
+                font-size: 25px;
+                font-family: Montserrat-Bold;
+                width: 100%;
+                .mobile-br{
+                    display: none;
+                }
+            }
+            .easy-quick-right{
+                font-size: 11px;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+    
 }
