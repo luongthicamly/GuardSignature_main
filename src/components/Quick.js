@@ -6,8 +6,7 @@ function Quick(props) {
             <div className='container'>
                 <div className='easy-quick-content'>
                     <div className='easy-quick-left'>
-                        Easy and<br />
-                        quick
+                        Easy and<br className='mobile-br'/> quick
                     </div>
                     <div className='easy-quick-right'>
                         가드 시그니처에서는 복잡한 절차를 거치지 않고 수월하게 계약을 진행할 수 있습니다. 준비해둔 계약 문서를 곧바로 업로드하고,<br />

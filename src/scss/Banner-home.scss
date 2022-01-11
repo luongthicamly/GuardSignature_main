@@ -15,10 +15,12 @@
             color: white;
             h1{
                 font-size: 50px;
+                animation: moveInTop 1s ease-in-out;
             }
             p{
                 font-family: NotoSansKR-Light;
                 line-height: 1.7;
+                animation: moveInLeft 2.5s ease-in-out;
             }
             .btn-check-now{
                 margin-top: 40px;
@@ -28,6 +30,7 @@
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                animation: moveInBottom 2.5s ease-in-out;
                 img{
                     padding-left: 20px;
                 }
