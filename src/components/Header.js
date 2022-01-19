@@ -3,7 +3,10 @@ import logo from '../logo-icon-1.png';
 import { NavLink } from 'react-router-dom';
 import '../scss/Header.scss'
 import { useLocation } from "react-router-dom";
+import i18n from '../i18next/i18n';
+import { useTranslation } from 'react-i18next';
 function Header(props) {
+    const [activeLanguage, setActiveLanguage] = useState(false);
     const location = useLocation();
     const { pathname } = location;
     const splitLocation = pathname.split("/");
@@ -11,6 +14,11 @@ function Header(props) {
     const handleClickMenu = () => {
         setIsOpen(!isOpen);
     }
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        setActiveLanguage(!activeLanguage);
+    }
+    const { t } = useTranslation();
     return (
         <header>
             <div className="container">
@@ -22,22 +30,23 @@ function Header(props) {
                         <nav>
                             <ul>
                                 <li>
-                                    <NavLink to='introduction' className={splitLocation[1] === "introduction" ? "active" : ""}>서비스 소개</NavLink>
+                                    <NavLink to='introduction' className={splitLocation[1] === "introduction" ? "active" : ""}>
+                                    {t('menu.itemMenu1')}</NavLink>
                                 </li>
                                 <li className={splitLocation[1] === "introduction" ? "active" : ""}>
-                                    <NavLink to='Security'>법적효력·보안</NavLink>
+                                    <NavLink to='Security'>{t('menu.itemMenu2')}</NavLink>
                                 </li>
                                 <li className={splitLocation[1] === "applications" ? "active" : ""}>
-                                    <NavLink to='applications'>활용 분야</NavLink>
+                                    <NavLink to='applications'>{t('menu.itemMenu3')}</NavLink>
                                 </li>
                                 <li className={splitLocation[1] === "benefits" ? "active" : ""}>
-                                    <NavLink to='benefits'>이용 혜택</NavLink>
+                                    <NavLink to='benefits'>{t('menu.itemMenu4')}</NavLink>
                                 </li>
                                 <li className={splitLocation[1] === "infomation" ? "active" : ""}>
-                                    <NavLink to='infomation'>요금 안내</NavLink>
+                                    <NavLink to='infomation'>{t('menu.itemMenu5')}</NavLink>
                                 </li>
                                 <li className={splitLocation[1] === "service" ? "active" : ""}>
-                                    <NavLink to='service'>고객센터</NavLink>
+                                    <NavLink to='service'>{t('menu.itemMenu6')}</NavLink>
                                 </li>
                             </ul>
                         </nav>
@@ -46,10 +55,16 @@ function Header(props) {
                         <nav>
                             <ul>
                                 <li className={splitLocation[1] === "login" ? "active" : ""}>
-                                    <NavLink to='login'>로그인</NavLink>
+                                    <NavLink to='login'>{t('menu.itemMenu7')}</NavLink>
                                 </li>
                                 <li className={splitLocation[1] === "sign-up" ? "active" : ""}>
-                                    <NavLink to='sign-up'>회원가입</NavLink>
+                                    <NavLink to='sign-up'>{t('menu.itemMenu8')}</NavLink>
+                                </li>
+                                <li>
+                                    <div className='language'>
+                                        <div className={'en ' + (activeLanguage === true ? "active" :'') } onClick={() => changeLanguage('en')}>EN</div>
+                                        <div className={'kore ' + (activeLanguage === false ? "active" :'')} onClick={() => changeLanguage('korea')}>KORE</div>
+                                    </div>
                                 </li>
                             </ul>
                         </nav>

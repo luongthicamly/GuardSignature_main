@@ -1,0 +1,304 @@
+{
+    "menu":{
+        "itemMenu1": "introduction",
+        "itemMenu2": "Security",
+        "itemMenu3": "Application",
+        "itemMenu4": "benefits",
+        "itemMenu5": "Prices",
+        "itemMenu6": "Customer",
+        "itemMenu7": "Login",
+        "itemMenu8": "Register"
+    },
+    "banner": {
+        "h1": {
+            "row1":"All contracts are easy",
+            "row2":"Keep it simple and fast."
+        },
+        "content":{
+            "row1": "With Guard Signature, any contract",
+            "row2": "It is simple and easy to process without complicated procedures,",
+            "row3": "Convenient access to document processing and management."
+        },
+        "button": "Check it out now"
+    },
+    "contracting":{
+        "title": "Simple contract process",
+        "descreption":{
+            "des1": "Please upload a contract file to request signature.",
+            "des2": "The other party can sign via email or KakaoTalk link without registering as a member.",
+            "des3": "Sign a contract in 5 minutes anytime, anywhere."
+        },
+        "process":{
+            "itemProcess1": {
+                "title": "Upload",
+                "content": {
+                    "row1": "Required contract file",
+                    "row2": "upload."
+                }
+            },
+            "itemProcess2": {
+                "title": "Request signature",
+                "content": {
+                    "row1": "In the uploaded contract file",
+                    "row2": "request your signature."
+                }
+            },
+            "itemProcess3": {
+                "title": "Enter your signature",
+                "content": {
+                    "row1": "the other party through a simple procedure",
+                    "row2": "you can sign it."
+                }
+            },
+            "itemProcess4": {
+                "title": "Contract Complete",
+                "content": {
+                    "row1": "Anytime, anywhere",
+                    "row2": "contract completed in 5 minutes!"
+                }
+            }
+        }
+    },
+    "getStarted": {
+        "smallText": "Get started right now!",
+        "h4": {
+            "row1": "Simple contract process without explanation,",
+            "row2": "Try it for yourself!"
+        },
+        "button": "Learn more"
+    },
+    "service": {
+        "block1": {
+            "small": "First",
+            "title": {
+                "row1": "At a glance",
+                "row2": "Contract Status"
+            },
+            "content": {
+                "row1":"Track all the progress of the contract in real time.",
+                "row2": "Requires my signature based on progress, pending signature, signature complete,",
+                "row3": "Cancellations, rejections, etc. are queried. By status via status filter function",
+                "row4": "You can also list and manage documents."
+            }
+        },
+        "block2": {
+            "small": "second",
+            "title": {
+                "row1": "used signature",
+                "row2": "as is"
+            },
+            "content": {
+                "row1":"You can use your old sign and stamp on PC and mobile.",
+                "row2": "You can draw your own signature, or create a digital stamp of various fonts.",
+                "row3": "If you upload an actual painting with a camera, it will be corrected neatly,",
+                "row4": "You can use the signatures and stamps created by Guard Signatures directly in your contract"
+            }
+        },
+       "block3": {
+            "small": "third",
+            "title": {
+                "row1": "simple",
+                "row2": "Authentication"
+            },
+            "content": {
+                "row1":"Does not require a public certificate, OTP, Active X, etc.",
+                "row2": "Authentication with simple and fast mobile phone authentication and access password setting",
+                "row3": "You can make a request. The request for authentication is not legally effective",
+                "row4": "Optionally available."
+            }
+        },
+        "block4": {
+             "small": "four",
+             "title": {
+                 "row1": "text and",
+                 "row2": "Enter checkbox"
+             },
+             "content": {
+                 "row1":"Please enter textboxes and checkboxes in the document.",
+                 "row2": "Freely specify the input position, size, and font",
+                 "row3": "You can set whether or not required input is required.",
+                 "row4": "You can also ask the other person to enter text."
+             }
+         }
+     },
+     "quick": {
+        "title":{
+            "row1": "Easy and",
+            "row2": "quick"
+        },
+        "content": {
+            "row1": "With Guard Signature, you can easily proceed with a contract without going through complicated procedures. Upload the contract document you have prepared immediately,",
+            "row2": "Request a signature. The other party can also sign without registering as a member or complicated authentication process.",
+            "row3": "You can effectively check the entire contract process, and the contract can be completed in 5 minutes anytime, anywhere.",
+            "row4": "Make and manage contracts with opponents quickly and quickly with Guard Signatures."
+        }
+    },
+    "signature": {
+        "block1":{
+            "title":{
+                "row1": "All signature-only",
+                "row2": "Effective function"
+            },
+            "item1":{
+                "title": "Save and load templates",
+                "content":{
+                    "row1":"Save frequently used documents and create templates whenever needed",
+                    "row2":"You can call it and work quickly."
+                }
+            },
+            "item2":{
+                "title": "Set Folder",
+                "content":{
+                    "row1":"Documents that need to be managed separately through folder settings",
+                    "row2":"It's more organized."
+                }
+            },
+            "item3":{
+                "title": "Enter text and checkboxes",
+                "content":{
+                    "row1":"Text, set the checkbox to free text in the document",
+                    "row2":"You can enter and confirm whether the other party agrees."
+                }
+            },
+            "item4":{
+                "title": "Support various file formats",
+                "content":{
+                    "row1":"Hangul, Office type (Word, PPT, Excel), PDF to JPG, PNG,",
+                    "row2":"Upload even image files such as GIF, BMP without conversion",
+                    "row3": "Available."
+                }
+            }
+        },
+        "block2":{
+            "title":{
+                "row1": "Contract quickly and easily",
+                "row2": "How to sign up!"
+            },
+            "item1":{
+                "title": "Authentication without a public certificate",
+                "content":{
+                    "row1":"No public certificate and ActiveX required. Email authentication,",
+                    "row2":"Try easy self-authentication with mobile phone authentication and password authentication settings."
+                }
+            },
+            "item2":{
+                "title": "Request a signature with KakaoTalk",
+                "content":{
+                    "row1":"Try to ask the other party to sign with KakaoTalk. The other party will",
+                    "row2":"You can sign contracts anytime, anywhere on PC, mobile."
+                }
+            },
+            "item3":{
+                "title": "Contracting and Security",
+                "content":{
+                    "row1":"Quickly and quickly with an intuitive flow that anyone can use",
+                    "row2":"You can sign a contract and continue to manage it after that."
+                }
+            },
+            "item4":{
+                "title": "Immediately sign without signup",
+                "content":{
+                    "row1":"The contracted party after simple authentication without cumbersome membership registration process",
+                    "row2":"You can sign immediately."
+                }
+            }
+        },
+        "block3":{
+            "title":{
+                "row1": "Easy to contract",
+                "row2": "Done"
+            },
+            "item1":{
+                "title": "Proof through audit trail certificate",
+                "content":{
+                    "row1":"Contract with 'audit trace certificate' issued together with the original upon completion of the contract",
+                    "row2":"It is easy to prove the actions of the parties."
+                }
+            },
+            "item2":{
+                "title": "Sign alone",
+                "content":{
+                    "row1":"quickly for documents that only you sign, such as consent forms and receipts",
+                    "row2":"You can sign it."
+                }
+            },
+            "item3":{
+                "title": "Support various drive uploads",
+                "content":{
+                    "row1":"Stored in Google Drive, Dropbox, Box, One Drive",
+                    "row2":"Upload the document without conversion and use it."
+                }
+            },
+            "item4":{
+                "title": "Manage contract documents",
+                "content":{
+                    "row1":"Check the contents of each contract document in My Inbox, download the contract,",
+                    "row2":"Can be shared or deleted."
+                }
+            }
+        }
+    },
+    "reason": {
+        "title": "Why choose Guard Signature",
+        "descreption": {
+            "des1": "Why so many companies choose Guard Signatures,",
+            "des2": "Click the button below for more information."
+        },
+        "item1":{
+            "title":"easy and convenient",
+            "content": {
+                "row1": "Anyone without cumbersome procedures",
+                "row2": "We can close the contract quickly."
+            }
+        },
+        "item2": {
+            "title":"Safe Security",
+            "content": {
+                "row1": "Data is transmitted encrypted",
+                "row2": "Saved in a safe place."
+            }
+        },
+        "item3": {
+            "title":"Various file types",
+            "content": {
+                "row1": "Hangul, Office to PDF, JPG",
+                "row2": "Supports the same image file without conversion"
+            }
+        },
+        "item4": {
+            "title":"easy and convenient",
+            "content": {
+                "row1": "Anyone without cumbersome procedures",
+                "row2": "We can close the contract quickly."
+            }
+        },
+        "item5": {
+            "title":"Safe Security",
+            "content": {
+                "row1": "Data is transmitted encrypted",
+                "row2": "Saved in a safe place."
+            }
+        },
+        "item6": {
+            "title":"Various file types",
+            "content": {
+                "row1": "Hangul, Office to PDF, JPG",
+                "row2": "Supports the same image file without conversion"
+            }
+        },
+        "button": "download guide"
+    },
+    "footer": {
+        "row1": "Terms of Use",
+        "row2": "Privacy Policy",
+        "row3": "Customer Center",
+        "row4": "Guard Signature Co., Ltd.",
+        "row5": "CEO: Hong Gil-dong",
+        "row6": "Business registration number: 356-00-00000",
+        "row7": "Email: test0101@guardsignature.co.kr",
+        "row8": "FAX: 070-0000-0000",
+        "row9": "3rd floor, 17, Dosan-daero 8-gil, Gangnam-gu, Seoul",
+        "row10": "Copyright© GUARDSIGNATURE All rights reserved."
+    }
+    
+}

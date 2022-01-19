@@ -7,9 +7,11 @@
         font-size: 40px;
     }
     .item-tab{
+        margin-bottom: 30px;
         cursor: pointer;
         .title-item-tab{
             font-size: 25px;
+            margin: 0;
         }
         &:hover{
             color: #157eff;
@@ -17,6 +19,10 @@
         &.active{
             color: #333333;
         }
+        p{
+            margin: 0;
+        }
+       
     }
     .content-reason{
         display: flex;

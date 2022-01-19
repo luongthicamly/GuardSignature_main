@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../scss/Reason.scss'
 function Reason(props) {
     const [tab, setTab] = useState('tab-1');
@@ -6,15 +7,16 @@ function Reason(props) {
         // console.log(nameTab)
         setTab(nameTab);
     }
+    const {t} = useTranslation();
     return (
         <div className='reason mt-5'>
             <div className='container'>
                 <p className='title'>
-                    가드 시그니처를 선택하는 이유
+                    {t('reason.title')}
                 </p>
                 <p>
-                    많은 기업들이 가드 시그니처를 선택하는 이유,<br/>
-                    아래 버튼을 눌러 상세한 정보를 알아보세요.
+                    {t('reason.descreption.des1')}<br/>
+                    {t('reason.descreption.des2')}
                 </p>
                 <div className='content-reason'>
                     <div className='tab-left'>
@@ -26,11 +28,11 @@ function Reason(props) {
                             }
 
                             <p className='title-item-tab'>
-                                쉽고 편리하게
+                                {t('reason.item1.title')}
                             </p>
                             <p>
-                                번거로운 절차 없이 누구나<br/>
-                                빠르게 계약을 체결할 수 있습니다.       
+                                {t('reason.item1.content.row1')}<br/>
+                                {t('reason.item1.content.row2')}     
                             </p>
                         </div>
                         <div className={'item-tab '+ (tab === 'tab-2' ? 'active' : '')}
@@ -40,11 +42,11 @@ function Reason(props) {
                             : <img src='./images/reason_icon_2.1.png' alt='reason_icon'/>
                             }
                             <p className='title-item-tab'>
-                                안전한 보안
+                                {t('reason.item2.title')}
                             </p>
                             <p>
-                                데이터는 암호화되어 전송되고<br/>
-                                안전한 곳에 저장됩니다.     
+                                {t('reason.item2.content.row1')}<br/>
+                                {t('reason.item2.content.row2')}     
                             </p>
                         </div>
                         <div className={'item-tab '+ (tab === 'tab-3' ? 'active' : '')}
@@ -54,11 +56,11 @@ function Reason(props) {
                             : <img src='./images/reason_icon_3.1.png' alt='reason_icon'/>
                             }
                             <p className='title-item-tab'>
-                                다양한 파일형식
+                                {t('reason.item3.title')}
                             </p>
                             <p>
-                                한글, 오피스부터 PDF, JPG와<br/>
-                                같은 이미지 파일도 변환없이 지원       
+                                {t('reason.item3.content.row1')}<br/>
+                                {t('reason.item3.content.row2')}     
                             </p>
                         </div>
                     </div>
@@ -78,11 +80,11 @@ function Reason(props) {
                             : <img src='./images/reason_icon_4.1.png' alt='reason_icon'/>
                             }
                             <p className='title-item-tab'>
-                                쉽고 편리하게
+                                {t('reason.item4.title')}
                             </p>
                             <p>
-                                번거로운 절차 없이 누구나<br/>
-                                빠르게 계약을 체결할 수 있습니다.       
+                                {t('reason.item4.content.row1')}<br/>
+                                {t('reason.item4.content.row2')}     
                             </p>
                         </div>
                         <div className={'item-tab '+ (tab === 'tab-5' ? 'active' : '')}
@@ -92,11 +94,11 @@ function Reason(props) {
                             : <img src='./images/reason_icon_5.1.png' alt='reason_icon'/>
                             }
                             <p className='title-item-tab'>
-                                안전한 보안
+                                {t('reason.item5.title')}
                             </p>
                             <p>
-                                데이터는 암호화되어 전송되고<br/>
-                                안전한 곳에 저장됩니다.     
+                                {t('reason.item5.content.row1')}<br/>
+                                {t('reason.item5.content.row2')}     
                             </p>
                         </div>
                         <div className={'item-tab '+ (tab === 'tab-6' ? 'active' : '')}
@@ -106,18 +108,18 @@ function Reason(props) {
                             : <img src='./images/reason_icon_6.1.png' alt='reason_icon'/>
                             }
                             <p className='title-item-tab'>
-                                다양한 파일형식
+                                {t('reason.item6.title')}
                             </p>
                             <p>
-                                한글, 오피스부터 PDF, JPG와<br/>
-                                같은 이미지 파일도 변환없이 지원       
+                                {t('reason.item6.content.row1')}<br/>
+                                {t('reason.item6.content.row2')}     
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className='btn-div'>
                     <div className='btn-download'>
-                        <div>가이드 다운로드</div>
+                        <div>{t('reason.button')}</div>
                         <img src="./images/icon-next.png" alt="icon-next"></img>
                     </div>
                 </div>
