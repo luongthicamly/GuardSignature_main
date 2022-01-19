@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import i18n from '../i18next/i18n';
 import { useTranslation } from 'react-i18next';
 function Header(props) {
-    const [activeLanguage, setActiveLanguage] = useState(false);
+    const [activeLanguage, setActiveLanguage] = useState('korea');
     const location = useLocation();
     const { pathname } = location;
     const splitLocation = pathname.split("/");
@@ -16,7 +16,7 @@ function Header(props) {
     }
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        setActiveLanguage(!activeLanguage);
+        setActiveLanguage(lng);
     }
     const { t } = useTranslation();
     return (
@@ -62,8 +62,8 @@ function Header(props) {
                                 </li>
                                 <li>
                                     <div className='language'>
-                                        <div className={'en ' + (activeLanguage === true ? "active" :'') } onClick={() => changeLanguage('en')}>EN</div>
-                                        <div className={'kore ' + (activeLanguage === false ? "active" :'')} onClick={() => changeLanguage('korea')}>KORE</div>
+                                        <div className={'en ' + (activeLanguage === 'en' ? "active" :'') } onClick={() => changeLanguage('en')}>EN</div>
+                                        <div className={'kore ' + (activeLanguage === 'korea' ? "active" :'')} onClick={() => changeLanguage('korea')}>KORE</div>
                                     </div>
                                 </li>
                             </ul>
